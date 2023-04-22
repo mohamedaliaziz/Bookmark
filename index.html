@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container border-bottom p-5 my-3  ">
+            <h3 class="text-black-50">Bookmarker</h3>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="well bg-secondary-subtle  text-center">
+            <div class="column py-3">
+                <h2>Bookmark your favorite sites </h2>
+                <p class="mb-3 fs-5 fw-bold">Site Name</p>
+                <input id="bookmarkName" class="form-control w-75 d-inline-block" placeholder="Bookmark Name"
+                    type="text">
+                <p class="alert alert-danger w-50 m-auto d-none" id="nameError"></p>
+                <p class="mb-3 fs-5 fw-bold">Site URL</p>
+                <input id="bookmarkURL" class="form-control w-75 d-inline-block " placeholder="website URL" type="text">
+                <p class="alert  alert-danger w-50 m-auto d-none " id="urlError"></p>
+                <div class="m-auto mt-4">
+                    <button class="btn btn-primary" onclick="submit()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container border-bottom ">
+        <div class="column shadow bg-secondary-subtle ">
+            <table class=" my-4 table py-4 ">
+                <tbody id="bookmarksTable">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container my-5">
+            <p>© 2019 Bookmarker Inc.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
